@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#546e7a"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/new_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/start_new"
+            android:src="@drawable/new_pic"
+
+            />
+        <ImageButton
+          android:id="@+id/new_Color"
+        android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dp"
+            android:contentDescription="@string/paint"
+            android:onClick="paintClicked"
+            android:src="@drawable/colors"
+            android:tag="#FF660000"
+            />
+
+        <ImageButton
+            android:id="@+id/draw_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/brush"
+            android:src="@drawable/brush"
+            />
+        <ImageButton
+            android:id="@+id/erase_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/erase"
+            android:src="@drawable/eraser"
+            />
+
+        <ImageButton
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/save"
+            android:src="@drawable/save"
+            />
+
+
+     </LinearLayout>
+
+
+     <com.baez.alejandro.mypaint.DrawingView
+         android:id="@+id/drawing"
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_marginBottom="3dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_marginTop="3dp"
+         android:layout_weight="1"
+         android:background="#FFFFFFFF"
+
+         />
+
+
+</LinearLayout>
